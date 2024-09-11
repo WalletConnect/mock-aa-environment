@@ -8,9 +8,9 @@
         "start:alto": "pnpm alto run --config ./alto-config.json"
     },
     "dependencies": {
-        "alto": "github:pimlicolabs/alto",
+        "alto": "github:WalletConnect/alto#feat/7702",
         "alto + contract-deployer": "link:",
-        "viem": "^2.9.9"
+        "viem": "^2.21.4"
     },
     "devDependencies": {
         "@types/node": "^20.12.4",

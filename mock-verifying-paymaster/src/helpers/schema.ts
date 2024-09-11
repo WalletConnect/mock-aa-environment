@@ -115,6 +115,17 @@ const userOperationSchemaPaymasterV7 = z
 			.nullable()
 			.optional()
 			.transform((val) => val ?? undefined),
+		// authorizationList: z.array(z.object({
+		// 		contractAddress: addressSchema,
+		// 		chainId: z.number(),
+		// 		nonce: z.number(),
+		// 		yParity: z.number(),
+		// 		r: hexDataSchema,
+		// 		s: hexDataSchema,
+		// 	}))
+		// 	.nullable()
+		// 	.optional()
+		// 	.transform((val) => val ?? null),
 		signature: hexDataSchema.optional().transform((val) => {
 			if (val === undefined) {
 				return "0x";
@@ -212,6 +223,17 @@ const eip7677UserOperationSchemaV7 = z
 			.nullable()
 			.optional()
 			.transform((val) => val ?? null),
+		// authorizationList: z.array(z.object({
+		// 		contractAddress: addressSchema,
+		// 		chainId: z.number(),
+		// 		nonce: z.number(),
+		// 		yParity: z.number(),
+		// 		r: hexDataSchema,
+		// 		s: hexDataSchema,
+		// 	}))
+		// 	.nullable()
+		// 	.optional()
+		// 	.transform((val) => val ?? null),
 		signature: hexDataSchema.optional().transform((val) => {
 			if (val === undefined) {
 				return "0x";

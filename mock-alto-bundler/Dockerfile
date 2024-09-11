@@ -1,5 +1,5 @@
 # production ready dockerfile that runs pnpm start
-FROM node:20-alpine
+FROM ghcr.io/pimlicolabs/mock-alto-bundler:main
 
 # set working directory
 WORKDIR /app
