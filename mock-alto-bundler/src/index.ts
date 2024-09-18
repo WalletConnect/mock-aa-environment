@@ -124,7 +124,7 @@ const main = async () => {
 			gas: 15_000_000n,
 			nonce: nonce++,
 		})
-		.then(() => console.log("[V0.7 CORE] Deploying EntryPoint"));
+		.then(e => console.log(`[V0.8 CORE] Deploying EntryPoint: ${e}`));
 
 	walletClient
 		.sendTransaction({
@@ -454,7 +454,7 @@ const main = async () => {
 		"0x4e59b44847b379578588920ca78fbf26c0b4956c", // Determinstic deployer
 		"0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7", // Safe Singleton Factory
 		"0x988C135a1049Ce61730724afD342fb7C56CD2776", // Biconomy Singleton Factory
-		"0x0000000071727De22E5E9d8BAf0edAc6f37da032", // EntryPoint v0.7
+		"0x81B7b5f86359916492bDe220A7f77C44f024A4Ca", // EntryPoint v0.7
 		"0x91E60e0613810449d098b0b5Ec8b51A0FE8c8985", // Simple Account Factory V0.7
 		"0x74Cb5e4eE81b86e70f9045036a1C5477de69eE87", // EntryPoint Simulations (Needed for v0.7)
 		"0x2dd68b007B46fBe91B9A7c3EDa5A7a1063cB5b47", // Safe V0.7 Module Setup
